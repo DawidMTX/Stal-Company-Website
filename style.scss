@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html,
 body {
     scroll-behavior: smooth;
@@ -53,23 +54,27 @@ body {
         .logo {
             margin: 0 5px;
             fill: black;
+
             @media (min-width: 1024px) {
                 margin: 0 10px 0 15px;
                 fill: white;
-                &--active{
-                    fill:black
+
+                &--active {
+                    fill: black
                 }
             }
-            
+
         }
 
         .header-name {
             margin: 0 3px;
             display: flex;
-            a{
+
+            a {
                 color: white;
                 text-decoration: none;
             }
+
             .company-name {
                 font-family: var.$MartelFont;
                 font-weight: 200;
@@ -78,7 +83,8 @@ body {
                     border-right: 1.5px groove rgba(255, 255, 255, .7);
                     padding-right: 35px;
                     margin-right: 35px;
-                    &--active{
+
+                    &--active {
                         color: #000;
                         border-right: 1.5px groove rgba(0, 0, 0, .7);
                     }
@@ -205,7 +211,7 @@ body {
                     color: black;
                     display: block;
 
-                    
+
                     @media (min-width: 561px) {
                         font-size: 2.4rem;
                     }
@@ -219,7 +225,8 @@ body {
                         color: white;
                         text-align: center;
                         line-height: 75px;
-                        &--active{
+
+                        &--active {
                             color: black;
                         }
                     }
@@ -586,22 +593,22 @@ header {
 .parallax {
     width: 100%;
     height: 450px;
-    background-image: url(/images/parallax/IMG_1990-560.JPG);
+    background-image: url(/images/parallax/IMG_1990-560.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 
     @media (min-width: 560px) {
-        background-image: url(/images/parallax/IMG_1990-750.JPG);
+        background-image: url(/images/parallax/IMG_1990-750.jpg);
     }
 
     @media (min-width: 751px) {
-        background-image: url(/images/parallax/IMG_1990-820.JPG);
+        background-image: url(/images/parallax/IMG_1990-820.jpg);
     }
 
     @media (min-width: 820px) {
-        background-image: url(/images/parallax/IMG_1990-1024.JPG);
+        background-image: url(/images/parallax/IMG_1990-1024.jpg);
     }
 
     @media (min-width: 1024px) {
@@ -765,12 +772,13 @@ header {
         left: calc((100% - 100vw)/2);
         width: 100vw;
 
-        .navigation-buttons{
+        .navigation-buttons {
             position: absolute;
             width: 100%;
             height: 100%;
             z-index: 100;
-            .right{
+
+            .right {
                 position: absolute;
                 top: 50%;
                 right: 3%;
@@ -780,21 +788,24 @@ header {
                 border: none;
                 background-color: rgba(250, 255, 255, .1);
             }
-            .left{
+
+            .left {
                 position: absolute;
                 top: 50%;
-                left:3%;
+                left: 3%;
                 width: var.$ButtonSize;
                 height: var.$ButtonSize;
                 border-radius: 50%;
                 border: none;
                 background-color: rgba(250, 255, 255, .1);
             }
+
             .left:hover,
-            .right:hover{
+            .right:hover {
                 transform: scale(0.9);
             }
-            .fa-solid{
+
+            .fa-solid {
                 color: #fff;
                 font-size: 2.5rem;
             }
